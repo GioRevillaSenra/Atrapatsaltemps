@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Acceso al PDF</title>
+</head>
+<body>
+  <h2>Introduce el código para acceder al PDF</h2>
+  <input type="password" id="codigo" placeholder="Código de acceso">
+  <button onclick="verificarCodigo()">Acceder</button>
+
+  <script>
+    function verificarCodigo() {
+      const codigo = document.getElementById("codigo").value;
+      if (codigo === "1234") {
+        window.location.href = "mapafinal.pdf";
+      } else {
+        alert("Código incorrecto");
+      }
+    }
+  </script>
+</body>
+</html>
